@@ -1,0 +1,181 @@
+/*--------------------------------------------------Header 1---------------------------------------------------*/
+#header-desktop {
+    background-color: #2C3E50;
+    height: 60px;
+}
+
+
+.nav-item .nav-link {
+    color: rgb(255, 255, 255) !important;
+    position: relative;
+    padding-bottom: 5px;
+    font-weight: bold;
+
+}
+
+/* Linha animada no hover */
+.nav-item .item-navegacao::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: rgb(255, 255, 255);
+    transition: width 0.3s ease-in-out;
+    color: #D2D2D2;
+}
+
+.nav-item .item-navegacao:hover::after {
+    width: 100%;
+    color:#fff 
+    
+}
+
+#login-icon {
+    margin-top: 8px;
+}
+
+#login-icon a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.nav-item {
+    margin: -10px 40px 0 0;
+}
+
+.navbar-brand img {
+    margin-top: -20px;
+    max-width: 60%;
+}
+
+#colori{
+    color: #2C3E50 !important;
+}
+
+
+    /*--------------------------------------------------Dashboard-------------------------------------------------------------*/
+   
+    .divider {
+        height: 2px;
+        background-color: #959595;
+        margin: 0 20px 20px 20px;
+    }
+    
+    .main-content {
+      
+        padding: 5px 20px; /* Aumenta o espaçamento vertical */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; /* Centralizar os cards horizontalmente */
+        align-items: center; /* Centralizar os cards verticalmente */
+        color:black;
+    }
+    
+    .card {
+        background-color: #ffffff;
+        border-radius: 10px;
+        padding: 20px;
+        margin: 20px; /* Aumenta a margem entre os cards */
+        width: 300px; /* Tamanho fixo para todos os cards */
+        text-align: center;
+    }
+
+    .energia{
+        background-color: #ffffff;
+        border-radius: 10px;
+        border: 1px solid #D2D2D2;
+        padding: 20px;
+        margin: 20px; /* Aumenta a margem entre os cards */
+        width: 640px; /* Tamanho fixo para todos os cards */
+        text-align: center;
+    }
+
+    .temperatura{
+        background-color: #ffffff;
+        border-radius: 10px;
+        border: 1px solid #D2D2D2;
+        padding: 20px;
+        margin: 20px; /* Aumenta a margem entre os cards */
+        width: 640px; /* Tamanho fixo para todos os cards */
+        text-align: center;
+    }
+
+    .performance{
+        background-color: #ffffff;
+        border-radius: 10px;
+        border: 1px solid #D2D2D2;
+        padding: 20px;
+        margin: 20px; /* Aumenta a margem entre os cards */
+        width: 300px; /* Tamanho fixo para todos os cards */
+       height: 260px;
+        text-align: center;
+    }
+
+    .pressao{
+        background-color: #ffffff;
+        border-radius: 10px;
+        border: 1px solid #D2D2D2;
+        padding: 20px;
+        margin: 20px; /* Aumenta a margem entre os cards */
+        width: 300px; /* Tamanho fixo para todos os cards */
+        text-align: center;
+    }
+
+    .estoque{
+        background-color: #ffffff;
+        border-radius: 10px;
+        border: 1px solid #D2D2D2;
+        padding: 20px;
+        margin: 20px; /* Aumenta a margem entre os cards */
+        width: 300px; /* Tamanho fixo para todos os cards */
+        text-align: center;
+    }
+
+    .estostatus{
+        background-color: #ffffff;
+        border-radius: 10px;
+        border: 1px solid #D2D2D2;
+        padding: 20px;
+        margin: 20px; /* Aumenta a margem entre os cards */
+        width: 300px; /* Tamanho fixo para todos os cards */
+        height: 250px;
+        text-align: center;
+    }
+
+    .table-divider td {
+        border-top: 2px solid #959595;
+        height: 10px; /* Ajuste conforme necessário */
+    }
+    
+    /* Adicione estas linhas ao final do seu arquivo de estilo CSS */
+    
+    #grafico-manutencao {
+        color: #fff; /* Altera a cor do texto da legenda para branco */
+    }
+    
+    .chart-container {
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+    
+
+/*__________________________________________________________________________________________________________________________*/
+/*__________________________________________________________________________________________________________________________*/
+
+/*Footer*/
+
+.footer {
+    background-color: #2C3E50;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

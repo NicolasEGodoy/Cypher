@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Sora', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    width: 100%;
+    background-color: #efefef;
+    max-width: 100%;
+}
+
+.icon {
+    position: absolute;
+    top: 10px;  /* Ajuste para posicionar corretamente */
+    left: 10px; /* Ajuste para posicionar corretamente */
+    width: 15px;
+    height: 15px;
+    z-index: 10;
+}
+
+.icon a {
+    color: #efefef; /* Ajuste a cor se necessário */
+    text-decoration: none;
+    z-index: 10;
+}
+
+.icon i {
+    font-size: 24px; /* Ajuste o tamanho da seta */
+    z-index: 10;
+}
+
+.background {
+    position: absolute;
+    width: 30%;
+    height: 100vh;
+    background-color: #0d1117;
+    left: 0;
+    top: 0;
+}
+
+.main-container {
+    display: flex;
+    align-items: center;
+    width: 800px;
+    height: 450px;
+    position: relative;
+}
+
+
+.profile-card {
+    position: absolute;
+    left: 13%;
+    transform: translateX(-50%);
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 2px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 350px;
+    width: 300px;
+}
+
+
+
+.profile-card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.profile-card #profile-pic{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #ccc;
+    border: 1px solid black;
+}
+
+.profile-card h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 15%;
+}
+
+.profile-card span {
+    display: block;
+    color: gray;
+    font-size: 12px;
+    letter-spacing: 2px;
+    align-items: end;
+
+}
+
+.profile-card button {
+    margin-top: 15px;
+    padding: 8px 12px;
+    background-color: #0d1117;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.profile-card button:hover {
+    background-color: #1a1f27;
+}
+
+.form-section {
+    width: 1000px;
+    margin-top:-5%;
+    padding: 40px;
+    margin-left: 30%;
+}
+
+.form-section h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 200px;
+    padding: 8px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    text-align: center;
+}
+
+#threediv{
+    display: flex;
+    gap: 40px;
+}
