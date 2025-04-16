@@ -1,89 +1,100 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
 
-    
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-  integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
-  crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../css/home.css">
-    <title>Home</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <title>Bem-vindo</title>
+
+
 </head>
 
 <body>
     <header id="header-desktop"><!-- inicio header-->
         <nav class="navbar navbar-expand-lg " id="nav-bar-all"><!--navegação-->
 
-          <!--imagem-->
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="../View/img/Logo_text.svg" alt="Bootstrap">
-            </a>
-          <!--fim imagem-->
-    
-            <!--responsive-->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-              aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <!--fim responsive-->
-    
-            <!--inicio dos itens-->
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-              <ul class="navbar-nav ">
-                <li class="nav-item">
-                  <a class="nav-link item-navegacao" aria-current="page" href="../View/home.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link item-navegacao" aria-current="page" href="../View/Solicitação_de_manutencao.html">Solicitação Ordem de Manutenção</a>
-            </li>
-                <!--dropdown-->
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                      aria-expanded="false">
-                      Cadastro
-                  </a>
-                  <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="../View/Gerenciamento_peças.html"><i class="fa-solid fa-gear"></i>  Peças</a></li>
-                      <li><a class="dropdown-item" href="../View/Gerenciamento_maquinas.html"><i class="fa-sharp-duotone fa-solid fa-industry"
-                                  style="--fa-primary-color: #000770; --fa-secondary-color: #adadad;"></i>  Maquinas
-                          </a></li>
-                      <li><a class="dropdown-item" id="icon" href="../View/Gerenciamento_Sensores.html"><i class="fa-solid fa-eye"></i>  Sensores</a></li>
-                      <li><a class="dropdown-item" id="icon" href="../View/Cadastro_usuário.html"><i class="fa-solid fa-user-secret"></i>  Usuario</a></li>
-                      <li><a class="dropdown-item" href="../View/Gerenciamento_ordens_manutenção.html"><i class="fa-solid fa-helmet-safety"></i>  Manutenção</a></li>
-                  </ul>
-              </li>
+            <!--imagem-->
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="../View/img/Logo_text.svg" alt="Bootstrap">
+                </a>
+                <!--fim imagem-->
 
-              <!--fim do dropdown-->
+                <!--responsive-->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!--fim responsive-->
 
-            
-              <li class="nav-item">
-                <a class="nav-link item-navegacao" href="../View/Relatorio.html">Relatorio</a>
-            </li>
+                <!--inicio dos itens-->
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                    <ul class="navbar-nav ">
+                        <li class="nav-item">
+                            <a class="nav-link item-navegacao" aria-current="page" href="../View/home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link item-navegacao" aria-current="page"
+                                href="../View/Solicitação_de_manutencao.html">Solicitação Ordem de Manutenção</a>
+                        </li>
+                        <!--dropdown-->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Cadastro
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../View/Gerenciamento_peças.html"><i
+                                            class="fa-solid fa-gear"></i> Peças</a></li>
+                                <li><a class="dropdown-item" href="../View/Gerenciamento_maquinas.html"><i
+                                            class="fa-sharp-duotone fa-solid fa-industry"
+                                            style="--fa-primary-color: #000770; --fa-secondary-color: #adadad;"></i>
+                                        Maquinas
+                                    </a></li>
+                                <li><a class="dropdown-item" id="icon" href="../View/Gerenciamento_Sensores.html"><i
+                                            class="fa-solid fa-eye"></i> Sensores</a></li>
+                                <li><a class="dropdown-item" id="icon" href="../View/Cadastro_usuário.html"><i
+                                            class="fa-solid fa-user-secret"></i> Usuario</a></li>
+                                <li><a class="dropdown-item" href="../View/Gerenciamento_ordens_manutenção.html"><i
+                                            class="fa-solid fa-helmet-safety"></i> Manutenção</a></li>
+                            </ul>
+                        </li>
 
-              <li class="nav-item">
-                  <a class="nav-link item-navegacao" href="../View/Dashboards.html">Dashboard</a>
-              </li>
-    
-    
-                <li class="nav-item">
-                  <div id="login-icon"><a href="../View/Perfil.html"><i class="fa-solid fa-user"></i></a></div>
-                </li>
-              </ul>
+                        <!--fim do dropdown-->
+
+
+                        <li class="nav-item">
+                            <a class="nav-link item-navegacao" href="../View/Historico.html">Histórico</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link item-navegacao" href="../View/Dashboards.html">Dashboard</a>
+                        </li>
+
+
+                        <li class="nav-item">
+                            <div id="login-icon"><a href="../View/Perfil.html"><i class="fa-solid fa-user"></i></a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!--fim dos itens-->
             </div>
-            <!--fim dos itens-->
-          </div>
         </nav>
         <!--fim de nav-bar-->
-      </header>
-      <!--fim do header-->
+    </header>
+    <!--fim do header-->
     <section>
-        
+
         <div id="banner_1" class="box-shadow-box  item-home"> </div>
         <div id="container_banners">
             <div id="banner_obj1" class="box-shadow-box  item-home"></div>
@@ -92,20 +103,160 @@
     </section>
 
 
-    <!--_________________________________________________Footer_____________________________________________________-->
+    <div class="content">
+
+        <!-- mensagem de Bem-vindo -->
+        <div class="msgBemvindo">
+            <h1>Bem-vindo ao sistema da Cypher</h1>
+            <h3>Gestão Inteligente,Indústria Eficiente</h3>
+        </div>
+
+        <div class="dashboardHome">
+
+        </div>
+
+        <div class="dashboardsDiv">
+            <h2 class="titulo">Dashboards</h2>
+            <div class="dashboard-container">
+
+                <!-- Status do Sensor -->
+                <div class="chart-box">
+                    <h3>Status do Sensor</h3>
+                    <canvas id="statusSensorChart"></canvas>
+                </div>
+
+                <!-- Desempenho da Máquina -->
+                <div class="chart-box">
+                    <h3>Desempenho da Máquina</h3>
+                    <canvas id="desempenhoChart"></canvas>
+                </div>
+
+                <!-- Ordem de Manutenção -->
+                <div class="chart-box">
+                    <h3>Ordem de Manutenção</h3>
+                    <canvas id="manutencaoChart"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <!-- tabela de recentes -->
+        <div id="recentes">
+            <h1 class="titulo">Solicitações Recentres</h1>
+            <div class="tableRecents">
+                <!-- tabela -->
+
+                <section class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th id="vanechline">Id_Manutenção</th>
+                                <th>Id_Ordem</th>
+                                <th>Tipo_Manutenção</th>
+                                <th>Custo R$</th>
+                                <th>Tempo realizado</th>
+                                <th>Observações</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="preenchimento">
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr class="preenchimento">
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr class="preenchimento">
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr class="preenchimento">
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <!-- fim da tabela -->
 
 
-    <footer class="footer">
-      <p>&copy;
-          <script>document.write(new Date().getFullYear());</script>TCC CYPHER LTD
-      </p>
-  </footer>
 
+            </div>
+        </div>
+        <!-- fim da tabela recentes -->
+        <script>
+            // Status do Sensor (Colunas)
+            const statusSensorChart = new Chart(document.getElementById("statusSensorChart"), {
+                type: 'bar',
+                data: {
+                    labels: ["Funcionando", "Falhando", "Calibração"],
+                    datasets: [{
+                        label: 'Quantidade',
+                        data: [12, 3, 5],
+                        backgroundColor: ['#33334d', '#F44336', '#FFC107']
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    plugins: { legend: { display: false } }
+                }
+            });
 
+            // Desempenho da Máquina (Linha com dados aleatórios)
+            const desempenhoChart = new Chart(document.getElementById("desempenhoChart"), {
+                type: 'line',
+                data: {
+                    labels: ["Seg", "Ter", "Qua", "Qui", "Sex", "Sáb", "Dom"],
+                    datasets: [{
+                        label: 'Desempenho (%)',
+                        data: Array.from({ length: 7 }, () => Math.floor(Math.random() * 100)),
+                        fill: false,
+                        borderColor: '#2196F3',
+                        tension: 0.3
+                    }]
+                },
+                options: {
+                    responsive: true
+                }
+            });
+
+            // Ordem de Manutenção (Colunas)
+            const manutencaoChart = new Chart(document.getElementById("manutencaoChart"), {
+                type: 'bar',
+                data: {
+                    labels: ["Abertas", "Pendentes", "Atrasadas", "Concluídas"],
+                    datasets: [{
+                        label: 'Quantidade',
+                        data: [8, 5, 2, 10],
+                        backgroundColor: ['#FF9800', '#1e1e2f', '#F44336', '#4CAF50']
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    plugins: { legend: { display: false } }
+                }
+            });
+        </script>
 </body>
-<script src="../JS/home.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
+
 
 </html>
