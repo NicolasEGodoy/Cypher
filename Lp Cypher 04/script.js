@@ -33,5 +33,5 @@ function enviarFormulario(event) {
     // Aqui você pode fazer algo com os dados, se quiser
 
     // Redireciona para Tela_login/index.html
-    window.location.href = "Tela_login/Login.html";
+    window.location.href = "../Tela_login/index.html";
   }

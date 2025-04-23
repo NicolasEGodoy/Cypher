@@ -116,19 +116,9 @@ var chart4 = new Chart(ctx4, {
         labels: ['Abertas', 'Pendentes', 'Atrasadas', 'Concluídas'],
         datasets: [{
             label: 'Disponibilidade (%)',
-            data: [8, 7, 9, 7],
-            backgroundColor: [
-                'rgba(75, 192, 192, 0.6)',   // Abertas
-                'rgba(255, 206, 86, 0.6)',   // Pendentes
-                'rgba(255, 99, 132, 0.6)',   // Atrasadas
-                'rgba(54, 162, 235, 0.6)'    // Concluídas
-            ],
-            borderColor: [
-                'rgba(75, 192, 192, 1)',
-                'rgba(255, 206, 86, 1)',
-                'rgba(255, 99, 132, 1)',
-                'rgba(54, 162, 235, 1)'
-            ],
+            data: [8, 7, 9, 7, 8],
+            backgroundColor: [],
+            borderColor: [],
             borderWidth: 1
         }]
     },
@@ -151,7 +141,6 @@ var chart4 = new Chart(ctx4, {
         }
     }
 });
-
 
 // Gráfico de Temperatura
 var ctx = document.getElementById('grafico-temperatura').getContext('2d');
